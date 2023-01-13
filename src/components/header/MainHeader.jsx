@@ -14,7 +14,7 @@ const MainHeader = () => {
         alt="Logo sneakers"
         className="mr-auto mb-1 h-5 md:mr-0"
       />
-      <nav>
+      <nav className="hidden md:block">
         <a href="">Collections</a>
         <a href="">Men</a>
         <a href="">Women</a>
