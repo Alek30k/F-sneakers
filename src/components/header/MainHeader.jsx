@@ -1,4 +1,6 @@
 import React from "react";
+import LogoSneakes from "@/assets/images/logo.svg";
+import AvatarImage from "@/assets/images/image-avatar.png";
 
 const MainHeader = () => {
   return (

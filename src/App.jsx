@@ -1,10 +1,10 @@
 import React from "react";
-import LogoSneakes from "@/assets/images/logo.svg";
-import AvatarImage from "@/assets/images/image-avatar.png";
+import MainHeader from "./components/header/MainHeader";
 
 const App = () => {
   return (
     <>
+      <MainHeader />
       <main>
         <section>galeria de imagenes</section>
         <section>
