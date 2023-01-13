@@ -1,10 +1,14 @@
 import React from "react";
 import LogoSneakes from "@/assets/images/logo.svg";
 import AvatarImage from "@/assets/images/image-avatar.png";
+import MenuIcon from "@/components/icons/MenuIcon";
 
 const MainHeader = () => {
   return (
     <header>
+      <button className="md:hidden">
+        <MenuIcon />
+      </button>
       <img
         src={LogoSneakes}
         alt="Logo sneakers"
