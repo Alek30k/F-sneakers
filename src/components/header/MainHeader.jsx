@@ -2,10 +2,11 @@ import React from "react";
 import LogoSneakes from "@/assets/images/logo.svg";
 import AvatarImage from "@/assets/images/image-avatar.png";
 import MenuIcon from "@/components/icons/MenuIcon";
+import CartIcon from "@/components/icons/CartIcon";
 
 const MainHeader = () => {
   return (
-    <header>
+    <header className="flex">
       <button className="md:hidden">
         <MenuIcon />
       </button>
@@ -21,8 +22,10 @@ const MainHeader = () => {
         <a href="">About</a>
         <a href="">Contact</a>
       </nav>
-      <div>
-        <button>cart</button>
+      <div className="flex">
+        <button>
+          <CartIcon />
+        </button>
         <img src={AvatarImage} alt="" />
       </div>
     </header>
