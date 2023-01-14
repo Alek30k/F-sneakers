@@ -7,14 +7,14 @@ import imgProductSmall4 from "@/assets/images/image-product-4-thumbnail.jpg";
 
 export default () => {
   return (
-    <section className="grid md:grid-cols-4">
+    <section className="grid md:grid-cols-4 md:gap-4">
       <div className="col-span-4">
         <img src={imgProduct1} alt="" />
       </div>
-      <img src={imgProductSmall1} alt="" />
-      <img src={imgProductSmall2} alt="" />
-      <img src={imgProductSmall3} alt="" />
-      <img src={imgProductSmall4} alt="" />
+      <img src={imgProductSmall1} alt="" className="hidden md:block" />
+      <img src={imgProductSmall2} alt="" className="hidden md:block" />
+      <img src={imgProductSmall3} alt="" className="hidden md:block" />
+      <img src={imgProductSmall4} alt="" className="hidden md:block" />
     </section>
   );
 };
