@@ -24,14 +24,14 @@ const MainHeader = () => {
         alt="Logo sneakers"
         className="mr-auto mb-1 h-5 md:mr-0"
       />
-      <nav className="hidden md:mr-auto md:flex md:gap-4 ">
+      <nav className="absolute flex flex-col md:mr-auto md:flex md:flex-row md:gap-4 ">
         <a href="">Collections</a>
         <a href="">Men</a>
         <a href="">Women</a>
         <a href="">About</a>
         <a href="">Contact</a>
       </nav>
-      <div className="flex gap-4">
+      <div className="flex gap-4 ">
         <button>
           <CartIcon />
         </button>
