@@ -17,7 +17,7 @@ const MainHeader = () => {
 
   return (
     <>
-      <header className="container mx-auto flex  items-center gap-8 px-4 py-8">
+      <header className="container mx-auto flex  items-center gap-8 py-8">
         <button className="md:hidden" onClick={handleOpenMenu}>
           <MenuIcon />
         </button>
