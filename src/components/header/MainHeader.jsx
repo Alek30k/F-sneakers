@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import LogoSneakes from "@/assets/images/logo.svg";
 import AvatarImage from "@/assets/images/image-avatar.png";
 import MenuIcon from "@/components/icons/MenuIcon";
 import CartIcon from "@/components/icons/CartIcon";
 
 const MainHeader = () => {
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
+
+  const handleOpenMenu = () => {
+    setIsOpenMenu(true);
+  };
+  const handleCloseMenu = () => {
+    setIsOpenMenu(false);
+  };
+
   return (
-    <header className="container mx-auto flex bg-slate-400 px-4">
-      <button className="md:hidden">
+    <header className="container mx-auto flex  items-center gap-8 bg-gray-400 px-4 py-8">
+      <button className="md:hidden" onClick={handleOpenMenu}>
         <MenuIcon />
       </button>
       <img
@@ -15,7 +24,7 @@ const MainHeader = () => {
         alt="Logo sneakers"
         className="mr-auto mb-1 h-5 md:mr-0"
       />
-      <nav className="hidden md:mr-auto md:block">
+      <nav className="hidden md:mr-auto md:flex md:gap-4 ">
         <a href="">Collections</a>
         <a href="">Men</a>
         <a href="">Women</a>
