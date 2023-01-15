@@ -13,10 +13,10 @@ export default () => {
       <div className="col-span-4">
         <img src={imgProduct1} alt="" className="aspect-[16/12]" />
         <button>
-          <PrevIcon />
+          <PrevIcon className="grid h-10 w-10 place-items-center  rounded-full bg-white" />
         </button>
         <button>
-          <NextIcon />
+          <NextIcon className=" grid h-10 w-10 place-items-center rounded-full bg-white" />
         </button>
       </div>
       <img src={imgProductSmall1} alt="" className="hidden md:block" />
