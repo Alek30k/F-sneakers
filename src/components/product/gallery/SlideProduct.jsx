@@ -9,7 +9,7 @@ export default () => {
   return (
     <section className="grid md:grid-cols-4 md:gap-4">
       <div className="col-span-4">
-        <img src={imgProduct1} alt="" className=" h-96" />
+        <img src={imgProduct1} alt="" className="aspect-[16/12]" />
       </div>
       <img src={imgProductSmall1} alt="" className="hidden md:block" />
       <img src={imgProductSmall2} alt="" className="hidden md:block" />
