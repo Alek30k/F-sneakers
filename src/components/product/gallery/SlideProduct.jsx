@@ -8,8 +8,8 @@ import imgProductSmall4 from "@/assets/images/image-product-4-thumbnail.jpg";
 export default () => {
   return (
     <section className="grid md:grid-cols-4 md:gap-4">
-      <div className="col-span-4 w-1/2">
-        <img src={imgProduct1} alt="" />
+      <div className="col-span-4">
+        <img src={imgProduct1} alt="" className=" h-96" />
       </div>
       <img src={imgProductSmall1} alt="" className="hidden md:block" />
       <img src={imgProductSmall2} alt="" className="hidden md:block" />
