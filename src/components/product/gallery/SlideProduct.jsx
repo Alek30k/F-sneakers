@@ -18,11 +18,13 @@ export default () => {
   const [index, setIndex] = useState(0);
 
   const handleClickNext = () => {
+    if (index === ARRAY_IMGS.length - 1) return setIndex(0);
     setIndex(index + 1);
     // index === ARRAY_IMGS.length - 1 ? setIndex(0) : setIndex(index + 1);
   };
   const handleClickPrev = () => {
-    console.log("first");
+    if (index === 0) return setIndex(ARRAY_IMGS.length - 1);
+    setIndex(index - 1);
     // index === 0 ? setIndex(ARRAY_IMGS.length - 1) : setIndex(index - 1);
   };
 
