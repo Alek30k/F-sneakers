@@ -10,14 +10,16 @@ import imgProductSmall4 from "@/assets/images/image-product-4-thumbnail.jpg";
 export default () => {
   return (
     <section className="grid md:grid-cols-4 md:gap-4">
-      <div className="col-span-4">
+      <div className="relative col-span-4">
         <img src={imgProduct1} alt="" className="aspect-[16/12]" />
-        <button className="grid h-10 w-10 place-items-center  rounded-full bg-white">
-          <PrevIcon />
-        </button>
-        <button className=" grid h-10 w-10 place-items-center rounded-full bg-white">
-          <NextIcon />
-        </button>
+        <div className="absolute top-1/2 left-0">
+          <button className="grid h-10 w-10 place-items-center  rounded-full bg-white">
+            <PrevIcon />
+          </button>
+          <button className=" grid h-10 w-10 place-items-center rounded-full bg-white">
+            <NextIcon />
+          </button>
+        </div>
       </div>
       <img src={imgProductSmall1} alt="" className="hidden md:block" />
       <img src={imgProductSmall2} alt="" className="hidden md:block" />
