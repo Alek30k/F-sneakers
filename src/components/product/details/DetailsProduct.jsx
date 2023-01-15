@@ -10,10 +10,14 @@ export default () => {
         Featuring a durable rubber outer sole, they’ll withstand everything the
         weather can offer.",
       </p>
-      <div className="grid grid-cols-3 font-bold">
+      <div className="mb-5 grid grid-cols-3 items-center gap-4 font-bold">
         <span className="text-3xl">$125.00</span>
-        <span>50%</span>
-        <span>$250.00</span>
+        <span className=" mr-auto rounded-md bg-pale-orange py-1 px-2 text-orange-primary">
+          50%
+        </span>
+        <span className="text-right text-lg text-grayish-blue line-through">
+          $250.00
+        </span>
       </div>
       <div>
         <div>
