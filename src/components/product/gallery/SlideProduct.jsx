@@ -1,4 +1,6 @@
 import imgProduct1 from "@/assets/images/image-product-1.jpg";
+import PrevIcon from "@/components/icons/PrevIcon";
+import NextIcon from "@/components/icons/NextIcon";
 
 import imgProductSmall1 from "@/assets/images/image-product-1-thumbnail.jpg";
 import imgProductSmall2 from "@/assets/images/image-product-2-thumbnail.jpg";
@@ -10,6 +12,12 @@ export default () => {
     <section className="grid md:grid-cols-4 md:gap-4">
       <div className="col-span-4">
         <img src={imgProduct1} alt="" className="aspect-[16/12]" />
+        <button>
+          <PrevIcon />
+        </button>
+        <button>
+          <NextIcon />
+        </button>
       </div>
       <img src={imgProductSmall1} alt="" className="hidden md:block" />
       <img src={imgProductSmall2} alt="" className="hidden md:block" />
