@@ -19,13 +19,15 @@ export default () => {
           $250.00
         </span>
       </div>
-      <div>
-        <div>
+      <div className="grid grid-cols-3 font-bold">
+        <div className="col-span-3">
           <button>-</button>
           <span>0</span>
           <button>+</button>
         </div>
-        <button>Add to cart</button>
+        <button className="col-span-3 rounded-md bg-orange-primary py-3 text-white">
+          <span>Add to cart</span>
+        </button>
       </div>
     </section>
   );
