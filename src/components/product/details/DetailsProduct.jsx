@@ -2,7 +2,7 @@ import CartIcon from "@/components/icons/CartIcon";
 
 export default () => {
   return (
-    <section className="container mx-auto px-6">
+    <section className="container mx-auto md:px-0">
       <p className="mb-3 font-bold uppercase tracking-wide text-orange-primary">
         Sneaker Company
       </p>
