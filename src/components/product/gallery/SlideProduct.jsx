@@ -47,10 +47,26 @@ export default () => {
           </button>
         </div>
       </div>
-      <img src={imgProductSmall1} alt="" className="hidden md:block" />
-      <img src={imgProductSmall2} alt="" className="hidden md:block" />
-      <img src={imgProductSmall3} alt="" className="hidden md:block" />
-      <img src={imgProductSmall4} alt="" className="hidden md:block" />
+      <img
+        src={imgProductSmall1}
+        alt=""
+        className="hidden md:block md:rounded-md"
+      />
+      <img
+        src={imgProductSmall2}
+        alt=""
+        className="hidden md:block md:rounded-md"
+      />
+      <img
+        src={imgProductSmall3}
+        alt=""
+        className="hidden md:block md:rounded-md"
+      />
+      <img
+        src={imgProductSmall4}
+        alt=""
+        className="hidden md:block md:rounded-md"
+      />
     </section>
   );
 };
