@@ -2,6 +2,7 @@ import PrevIcon from "@/components/icons/PrevIcon";
 import NextIcon from "@/components/icons/NextIcon";
 import { useState } from "react";
 import { useRef } from "react";
+import { useEffect } from "react";
 
 export default ({
   ARRAY_IMGS = [],
@@ -12,8 +13,11 @@ export default ({
   ...props
 }) => {
   const btnSlider = useRef(null);
-
   const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    if (isOpenModal) return btnSlider.current.classList.remove("md:hidden");
+  }, [isOpenModal]);
 
   const handleClickNext = () => {
     index === ARRAY_IMGS.length - 1 ? setIndex(0) : setIndex(index + 1);
