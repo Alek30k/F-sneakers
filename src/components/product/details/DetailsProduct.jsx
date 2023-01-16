@@ -12,12 +12,12 @@ export default () => {
         Featuring a durable rubber outer sole, they’ll withstand everything the
         weather can offer.",
       </p>
-      <div className="mb-5 grid grid-cols-3 items-center gap-4 font-bold">
+      <div className="mb-5 grid grid-cols-3 items-center gap-4 font-bold md:grid-cols-[1fr_3fr] md:gap-1">
         <span className="text-3xl">$125.00</span>
         <span className=" mr-auto rounded-md bg-pale-orange py-1 px-2 text-orange-primary">
           50%
         </span>
-        <span className="text-right text-lg text-grayish-blue line-through">
+        <span className="text-right text-lg text-grayish-blue line-through md:col-span-2 md:text-left">
           $250.00
         </span>
       </div>
