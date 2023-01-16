@@ -1,7 +1,8 @@
 import PrevIcon from "@/components/icons/PrevIcon";
 import NextIcon from "@/components/icons/NextIcon";
+import { useState } from "react";
 
-export default () => {
+export default ({ ARRAY_IMGS, ARRAY_IMG_SMALL }) => {
   const [index, setIndex] = useState(0);
 
   const handleClickNext = () => {
