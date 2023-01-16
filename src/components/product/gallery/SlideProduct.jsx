@@ -2,7 +2,7 @@ import PrevIcon from "@/components/icons/PrevIcon";
 import NextIcon from "@/components/icons/NextIcon";
 import { useState } from "react";
 
-export default ({ ARRAY_IMGS = [], ARRAY_IMG_SMALL = [] }) => {
+export default ({ ARRAY_IMGS = [], ARRAY_IMG_SMALL = [], ...props }) => {
   const [index, setIndex] = useState(0);
 
   const handleClickNext = () => {
@@ -13,7 +13,7 @@ export default ({ ARRAY_IMGS = [], ARRAY_IMG_SMALL = [] }) => {
   };
 
   return (
-    <section className="grid md:grid-cols-4 md:gap-4">
+    <section {...props}>
       <div className="relative col-span-4">
         <img
           src={ARRAY_IMGS[index]}
