@@ -1,5 +1,5 @@
+import SlideProduct from "@/components/product/gallery/SlideProduct";
+
 export default () => {
-    return (
-        
-    )
- }
+  return <SlideProduct />;
+};
