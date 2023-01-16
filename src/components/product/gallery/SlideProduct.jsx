@@ -2,7 +2,12 @@ import PrevIcon from "@/components/icons/PrevIcon";
 import NextIcon from "@/components/icons/NextIcon";
 import { useState } from "react";
 
-export default ({ ARRAY_IMGS = [], ARRAY_IMG_SMALL = [], ...props }) => {
+export default ({
+  ARRAY_IMGS = [],
+  ARRAY_IMG_SMALL = [],
+  isOpenModal = false,
+  ...props
+}) => {
   const [index, setIndex] = useState(0);
 
   const handleClickNext = () => {
@@ -14,6 +19,7 @@ export default ({ ARRAY_IMGS = [], ARRAY_IMG_SMALL = [], ...props }) => {
 
   return (
     <section {...props}>
+      {isOpenModal && <button className="text-right md:col-span-4">X</button>}
       <div className="relative col-span-4">
         <img
           src={ARRAY_IMGS[index]}
