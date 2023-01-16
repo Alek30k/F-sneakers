@@ -2,7 +2,7 @@ import PrevIcon from "@/components/icons/PrevIcon";
 import NextIcon from "@/components/icons/NextIcon";
 import { useState } from "react";
 
-export default ({ ARRAY_IMGS, ARRAY_IMG_SMALL }) => {
+export default ({ ARRAY_IMGS = [], ARRAY_IMG_SMALL = [] }) => {
   const [index, setIndex] = useState(0);
 
   const handleClickNext = () => {
@@ -35,26 +35,14 @@ export default ({ ARRAY_IMGS, ARRAY_IMG_SMALL }) => {
           </button>
         </div>
       </div>
-      <img
-        src={imgProductSmall1}
-        alt=""
-        className="hidden md:block md:rounded-md"
-      />
-      <img
-        src={imgProductSmall2}
-        alt=""
-        className="hidden md:block md:rounded-md"
-      />
-      <img
-        src={imgProductSmall3}
-        alt=""
-        className="hidden md:block md:rounded-md"
-      />
-      <img
-        src={imgProductSmall4}
-        alt=""
-        className="hidden md:block md:rounded-md"
-      />
+      {ARRAY_IMG_SMALL.map((smallImg) => (
+        <img
+          key={smallImg}
+          src={smallImg}
+          alt=""
+          className="hidden md:block md:rounded-md"
+        />
+      ))}
     </section>
   );
 };

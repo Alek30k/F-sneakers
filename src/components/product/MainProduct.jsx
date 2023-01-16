@@ -1,6 +1,6 @@
 import React from "react";
 import DetailsProduct from "@/components/product/details/DetailsProduct";
-import GalleryProduct from "@/components/gallery/GalleryProduct";
+import GalleryProduct from "@/components/product/gallery/GalleryProduct";
 
 import imgProduct1 from "@/assets/images/image-product-1.jpg";
 import imgProduct2 from "@/assets/images/image-product-2.jpg";
@@ -16,7 +16,7 @@ const ARRAY_IMGS = [imgProduct1, imgProduct2, imgProduct3, imgProduct4];
 const ARRAY_IMG_SMALL = [
   imgProductSmall1,
   imgProductSmall2,
-  imgProduct3,
+  imgProductSmall3,
   imgProductSmall4,
 ];
 const MainProduct = () => {
