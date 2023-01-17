@@ -15,9 +15,9 @@ export default ({
   const btnSlider = useRef(null);
   const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    isOpenModal && btnSlider.current.classList.remove("md:hidden");
-  }, [isOpenModal]);
+  // useEffect(() => {
+  //   isOpenModal && btnSlider.current.classList.remove("md:hidden");
+  // }, [isOpenModal]);
 
   const handleClickNext = () => {
     index === ARRAY_IMGS.length - 1 ? setIndex(0) : setIndex(index + 1);
@@ -42,7 +42,9 @@ export default ({
         />
         <div
           ref={btnSlider}
-          className="absolute top-1/2 left-0 flex w-full -translate-y-1/2 justify-between px-5 md:hidden"
+          className={`absolute top-1/2 left-0 flex w-full -translate-y-1/2 justify-between px-5 ${
+            !isOpenModal && "md:hidden"
+          }`}
         >
           <button
             className="grid h-10 w-10 place-items-center  rounded-full bg-white"
