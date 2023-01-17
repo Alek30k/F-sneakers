@@ -2,7 +2,6 @@ import PrevIcon from "@/components/icons/PrevIcon";
 import NextIcon from "@/components/icons/NextIcon";
 import { useState } from "react";
 import { useRef } from "react";
-import { useEffect } from "react";
 
 export default ({
   ARRAY_IMGS = [],
@@ -66,7 +65,7 @@ export default ({
           onClick={() => {
             setIndex(i);
           }}
-          className="group-[]: relative cursor-pointer overflow-hidden rounded-md"
+          className=" relative cursor-pointer overflow-hidden rounded-md"
         >
           <img
             src={smallImg}
