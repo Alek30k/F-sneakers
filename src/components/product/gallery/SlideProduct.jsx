@@ -43,7 +43,7 @@ export default ({
         <div
           ref={btnSlider}
           className={`absolute top-1/2 left-0 flex w-full -translate-y-1/2 justify-between px-5 ${
-            !isOpenModal && "md:hidden"
+            !isOpenModal && "md:hidden "
           }`}
         >
           <button
@@ -60,13 +60,22 @@ export default ({
           </button>
         </div>
       </div>
-      {ARRAY_IMG_SMALL.map((smallImg) => (
-        <img
-          key={smallImg}
-          src={smallImg}
-          alt=""
-          className="hidden md:block md:rounded-md"
-        />
+      {ARRAY_IMG_SMALL.map((smallImg, i) => (
+        <div
+          key={i}
+          onClick={() => {
+            setIndex(i);
+          }}
+          className="relative cursor-pointer overflow-hidden rounded-md"
+        >
+          <img
+            key={smallImg}
+            src={smallImg}
+            alt=""
+            className="hidden md:block md:rounded-md"
+          />
+          <span className="absolute top-0 h-full w-full hover:bg-[rgba(255,255,255,0.5)]"></span>
+        </div>
       ))}
     </section>
   );
