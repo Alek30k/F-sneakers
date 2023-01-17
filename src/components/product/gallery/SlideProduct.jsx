@@ -66,15 +66,18 @@ export default ({
           onClick={() => {
             setIndex(i);
           }}
-          className="relative cursor-pointer overflow-hidden rounded-md"
+          className="group-[]: relative cursor-pointer overflow-hidden rounded-md"
         >
           <img
-            key={smallImg}
             src={smallImg}
             alt=""
             className="hidden md:block md:rounded-md"
           />
-          <span className="absolute top-0 h-full w-full hover:bg-[rgba(255,255,255,0.5)]"></span>
+          <span
+            className={`absolute top-0 h-full w-full hover:bg-[rgba(255,255,255,0.5)] ${
+              i === index && "bg-[rgba(255,255,255,0.5)]"
+            }`}
+          ></span>
         </div>
       ))}
     </section>
