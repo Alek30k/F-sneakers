@@ -16,7 +16,7 @@ export default ({
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    if (isOpenModal) return btnSlider.current.classList.remove("md:hidden");
+    isOpenModal && btnSlider.current.classList.remove("md:hidden");
   }, [isOpenModal]);
 
   const handleClickNext = () => {
