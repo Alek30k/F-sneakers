@@ -14,10 +14,6 @@ export default ({
   const btnSlider = useRef(null);
   const [index, setIndex] = useState(0);
 
-  // useEffect(() => {
-  //   isOpenModal && btnSlider.current.classList.remove("md:hidden");
-  // }, [isOpenModal]);
-
   const handleClickNext = () => {
     index === ARRAY_IMGS.length - 1 ? setIndex(0) : setIndex(index + 1);
   };
