@@ -14,7 +14,7 @@ export default ({ ARRAY_IMGS, ARRAY_IMG_SMALL }) => {
       <SlideProduct
         ARRAY_IMGS={ARRAY_IMGS}
         ARRAY_IMG_SMALL={ARRAY_IMG_SMALL}
-        className="grid md:grid-cols-4 md:gap-4 "
+        className=" grid md:grid-cols-4 md:gap-4"
         handleOpenModal={handleOpenModal}
       />
       {isOpenModal && (
