@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LogoSneakes from "@/assets/images/logo.svg";
 import AvatarImage from "@/assets/images/image-avatar.png";
+import ImgSmall from "@/assets/images/image-product-1-thumbnail.jpg";
 import MenuIcon from "@/components/icons/MenuIcon";
 import CartIcon from "@/components/icons/CartIcon";
 import CloseIcon from "@/components/icons/CloseIcon";
@@ -53,11 +54,19 @@ const MainHeader = () => {
                     <img src={AvatarImage} alt="" className="w-10" />
                     <section className="absolute top-[125%] left-0 z-10 w-full">
                         <div className="mx-4 rounded-md bg-white shadow-md">
-                            <h4 className="p-10">Cart</h4>
+                            <h4 className="px-6 py-8 text-lg font-bold">
+                                Cart
+                            </h4>
                             <hr />
-                            <div className="grid grid-cols-[1fr_4fr_1fr] p-10">
-                                <img src="" alt="" />
-                                <div>Lorem ipsum dolor sit.</div>
+                            <div className=" grid grid-cols-[1fr_4fr_1fr] gap-6 p-10">
+                                <img
+                                    src={ImgSmall}
+                                    alt=""
+                                    className="rounded-md"
+                                />
+                                <div>
+                                    <h6>Fall Limited Edition Sneakers</h6>
+                                </div>
                                 <button>Delete</button>
                             </div>
                         </div>
