@@ -6,6 +6,7 @@ import MenuIcon from "@/components/icons/MenuIcon";
 import CartIcon from "@/components/icons/CartIcon";
 import CloseIcon from "@/components/icons/CloseIcon";
 import NavLinkHeader from "@/components/header/NavLinkHeader";
+import DeleteIcon from "../icons/DeleteIcon";
 
 const MainHeader = () => {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -58,7 +59,7 @@ const MainHeader = () => {
                                 Cart
                             </h4>
                             <hr />
-                            <div className=" grid grid-cols-[1fr_4fr_1fr] gap-6 p-10">
+                            <div className=" grid grid-cols-[1fr_4fr_1fr] items-center gap-6 p-10">
                                 <img
                                     src={ImgSmall}
                                     alt=""
@@ -66,8 +67,21 @@ const MainHeader = () => {
                                 />
                                 <div>
                                     <h6>Fall Limited Edition Sneakers</h6>
+                                    <p>
+                                        <span>$125.00 x 3</span>
+                                        <span className="font-bold">
+                                            $375.00
+                                        </span>
+                                    </p>
                                 </div>
-                                <button>Delete</button>
+                                <button className="ml-auto">
+                                    <DeleteIcon className="hover:fill-orange-primary" />
+                                </button>
+                            </div>
+                            <div className="px-6 pb-8">
+                                <button className="w-full rounded-md bg-orange-primary py-4 text-white transition-all hover:bg-orange-700">
+                                    Checkout
+                                </button>
                             </div>
                         </div>
                     </section>
