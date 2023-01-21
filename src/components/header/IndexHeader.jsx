@@ -51,6 +51,15 @@ const MainHeader = () => {
                         <CartIcon />
                     </button>
                     <img src={AvatarImage} alt="" className="w-10" />
+                    <section className="absolute">
+                        <h4>Cart</h4>
+                        <hr />
+                        <div className="grid grid-cols-3">
+                            <img src="" alt="" />
+                            <div>Lorem ipsum dolor sit.</div>
+                            <button>Delete</button>
+                        </div>
+                    </section>
                 </div>
             </header>
             <span className="container mx-auto hidden h-[1px] w-full bg-gray-300 md:block"></span>
