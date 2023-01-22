@@ -39,7 +39,7 @@ const MainProduct = () => {
                 ARRAY_IMGS={ARRAY_IMGS}
                 ARRAY_IMG_SMALL={ARRAY_IMG_SMALL}
             />
-            <DetailsProduct />
+            <DetailsProduct objectProduct={objectProduct} />
         </main>
     );
 };
