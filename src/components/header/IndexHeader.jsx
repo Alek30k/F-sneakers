@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import LogoSneakes from "@/assets/images/logo.svg";
 import AvatarImage from "@/assets/images/image-avatar.png";
-import ImgSmall from "@/assets/images/image-product-1-thumbnail.jpg";
 import MenuIcon from "@/components/icons/MenuIcon";
 import CartIcon from "@/components/icons/CartIcon";
 import CloseIcon from "@/components/icons/CloseIcon";
 import NavLinkHeader from "@/components/header/NavLinkHeader";
-import DeleteIcon from "../icons/DeleteIcon";
+import CartDetailsHeader from "@/components/header/CartDetailsHeader";
 
 const MainHeader = () => {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -53,38 +52,7 @@ const MainHeader = () => {
                         <CartIcon />
                     </button>
                     <img src={AvatarImage} alt="" className="w-10" />
-                    <section className="absolute top-[125%] left-0 z-10 w-full">
-                        <div className="mx-4 rounded-md bg-white shadow-md">
-                            <h4 className="px-6 py-8 text-lg font-bold">
-                                Cart
-                            </h4>
-                            <hr />
-                            <div className=" grid grid-cols-[1fr_4fr_1fr] items-center gap-6 p-10">
-                                <img
-                                    src={ImgSmall}
-                                    alt=""
-                                    className="rounded-md"
-                                />
-                                <div>
-                                    <h6>Fall Limited Edition Sneakers</h6>
-                                    <p>
-                                        <span>$125.00 x 3</span>
-                                        <span className="font-bold">
-                                            $375.00
-                                        </span>
-                                    </p>
-                                </div>
-                                <button className="ml-auto">
-                                    <DeleteIcon className="hover:fill-orange-primary" />
-                                </button>
-                            </div>
-                            <div className="px-6 pb-8">
-                                <button className="w-full rounded-md bg-orange-primary py-4 text-white transition-all hover:bg-orange-700">
-                                    Checkout
-                                </button>
-                            </div>
-                        </div>
-                    </section>
+                    <CartDetailsHeader />
                 </div>
             </header>
             <span className="container mx-auto hidden h-[1px] w-full bg-gray-300 md:block"></span>
