@@ -22,9 +22,10 @@ export default (props) => {
             })
         );
     };
-    // const deleteCartProducts = (id) => {
-    //     setCartProducts(cartProducts.filter((item) => item.id !== id));
-    // };
+
+    const deleteCartProducts = (id) => {
+        setCartProducts(cartProducts.filter((item) => item.id !== id));
+    };
 
     // const totalQuantityProduct = cartProducts.reduce(
     //     (acc, current) => current.quantity + acc,
