@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { useCartDetails } from "@/context/useCartDetails";
-import ImgSmall from "@/assets/images/image-product-1-thumbnail.jpg";
+// import ImgSmall from "@/assets/images/image-product-1-thumbnail.jpg";
 import DeleteIcon from "../icons/DeleteIcon";
 
 export default () => {
@@ -13,9 +13,9 @@ export default () => {
                 <hr />
                 {cartProducts.map((product) => (
                     <article className="grid grid-cols-[1fr_4fr_1fr] items-center gap-6 px-6 py-4">
-                        <img src={ImgSmall} alt="" className="rounded-md" />
+                        <img src={product.img} alt="" className="rounded-md" />
                         <div>
-                            <h6>Fall Limited Edition Sneakers</h6>
+                            <h6>{product.subtitle}</h6>
                             <p>
                                 <span>$125.00 x 3</span>
                                 <span className="font-bold">$375.00</span>
