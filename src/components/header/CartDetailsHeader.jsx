@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import ImgSmall from "@/assets/images/image-product-1-thumbnail.jpg";
 import DeleteIcon from "../icons/DeleteIcon";
+import useCartDetails from "@/context/useCartDetails";
 
 export default () => {
+    const { cartProducts, deleteCartProducts } = useContext(useCartDetails);
+
     return (
         <section className="absolute top-[125%] left-0 z-10 w-full md:top-full md:left-full md:max-w-lg md:-translate-x-full">
             <div className="mx-4 rounded-md bg-white shadow-md">
