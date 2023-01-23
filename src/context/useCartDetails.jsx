@@ -5,10 +5,10 @@ export default (props) => {
     const [cartProducts, setCartProducts] = useState([]);
 
     const addCartProducts = (product) => {
-        // if (cartProducts.length === 0) {
-        //     return setCartProducts([...cartProducts, product]);
-        // }
-        // setCartProducts(
+        if (cartProducts.length === 0) {
+            return setCartProducts([...cartProducts, product]);
+        }
+        setCartProducts();
         //     cartProducts.map((item) => {
         //         if (item.id === product.id) {
         //             return {
@@ -19,7 +19,6 @@ export default (props) => {
         //             return item;
         //         }
         //     })
-        // );
     };
 
     const deleteCartProducts = () => {};

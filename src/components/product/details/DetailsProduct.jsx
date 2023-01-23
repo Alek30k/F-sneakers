@@ -14,9 +14,9 @@ export default ({ objectProduct }) => {
                 (1 - objectProduct.discount)
             ).toFixed(2),
             title: objectProduct.title,
-            quantity: count || 1,
+            quantity: 1,
         });
-        setCount(0);
+        // setCount(0);
     };
 
     return (
