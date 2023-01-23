@@ -1,5 +1,4 @@
 import { createContext, useState } from "react";
-
 export const useCartDetails = createContext();
 
 export default (props) => {
