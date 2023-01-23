@@ -1,6 +1,10 @@
 import CartIcon from "@/components/icons/CartIcon";
+import useCartDetails from "@/context/useCartDetails";
+import { useContext } from "react";
 
 export default ({ objectProduct }) => {
+    const { addCartProducts } = useContext(useCartDetails);
+
     return (
         <section className="container mx-auto md:px-0">
             <p className="mb-3 font-bold uppercase tracking-wide text-orange-primary">
@@ -32,7 +36,11 @@ export default ({ objectProduct }) => {
                     <button className="text-3xl text-orange-primary">+</button>
                 </div>
                 <button className="col-span-3 flex items-center justify-center gap-x-3 rounded-md bg-orange-primary py-3 text-white transition-all hover:bg-orange-700 md:col-span-1">
-                    <CartIcon fill="#fff" className="fill-white" />
+                    <CartIcon
+                        fill="#fff"
+                        className="fill-white"
+                        onClick={handleAddToCart}
+                    />
                     <span>Add to cart</span>
                 </button>
             </div>

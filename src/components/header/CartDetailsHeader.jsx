@@ -40,11 +40,13 @@ export default () => {
                         </button>
                     </article>
                 ))}
-                <div className="px-6 pb-8">
-                    <button className="w-full rounded-md bg-orange-primary py-4 text-white transition-all hover:bg-orange-700">
-                        Checkout
-                    </button>
-                </div>
+                {cartProducts.length !== 0 && (
+                    <div className="px-6 pb-8">
+                        <button className="w-full rounded-md bg-orange-primary py-4 text-white transition-all hover:bg-orange-700">
+                            Checkout
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     );
