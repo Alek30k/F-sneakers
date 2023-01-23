@@ -22,14 +22,7 @@ export default (props) => {
         // );
     };
 
-    const deleteCartProducts = (id) => {
-        // setCartProducts(cartProducts.filter((item) => item.id !== id));
-    };
-
-    // const totalQuantityProduct = cartProducts.reduce(
-    //     (acc, current) => current.quantity + acc,
-    //     0
-    // );
+    const deleteCartProducts = () => {};
 
     return (
         <useCartDetails.Provider
