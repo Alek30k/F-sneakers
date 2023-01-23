@@ -12,13 +12,24 @@ export default () => {
                 <h4 className="px-6 py-8 text-lg font-bold">Cart</h4>
                 <hr />
                 {cartProducts.map((product) => (
-                    <article className="grid grid-cols-[1fr_4fr_1fr] items-center gap-6 px-6 py-4">
+                    <article
+                        className="grid grid-cols-[1fr_4fr_1fr] items-center gap-6 px-6 py-4"
+                        key={product.id}
+                    >
                         <img src={product.img} alt="" className="rounded-md" />
                         <div>
                             <h6>{product.subtitle}</h6>
                             <p>
-                                <span>$125.00 x 3</span>
-                                <span className="font-bold">$375.00</span>
+                                <span>
+                                    ${product.discountPrice} x{product.quantity}
+                                </span>
+                                <span className="font-bold">
+                                    {" "}
+                                    $
+                                    {(
+                                        product.discountPrice * product.quantity
+                                    ).toFixed(2)}
+                                </span>
                             </p>
                         </div>
                         <button className="ml-auto">
