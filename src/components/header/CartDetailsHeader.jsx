@@ -11,6 +11,9 @@ export default () => {
             <div className="mx-4 rounded-md bg-white shadow-md">
                 <h4 className="px-6 py-8 text-lg font-bold">Cart</h4>
                 <hr />
+                {cartProducts.length === 0 && (
+                    <p className="py-16 text-center">Your cart is empty.</p>
+                )}
                 {cartProducts.map((product) => (
                     <article
                         className="grid grid-cols-[1fr_4fr_1fr] items-center gap-6 px-6 py-4"
