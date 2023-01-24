@@ -9,16 +9,16 @@ export default (props) => {
             return setCartProducts([...cartProducts, product]);
         }
         setCartProducts();
-        //     cartProducts.map((item) => {
-        //         if (item.id === product.id) {
-        //             return {
-        //                 ...item,
-        //                 quantity: item.quantity + product.quantity,
-        //             };
-        //         } else {
-        //             return item;
-        //         }
-        //     })
+        cartProducts.map((item) => {
+            if (item.id === product.id) {
+                return {
+                    ...item,
+                    quantity: item.quantity + product.quantity,
+                };
+            } else {
+                return item;
+            }
+        });
     };
 
     const deleteCartProducts = () => {};
