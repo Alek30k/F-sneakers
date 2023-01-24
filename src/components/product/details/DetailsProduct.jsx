@@ -1,6 +1,6 @@
 import CartIcon from "@/components/icons/CartIcon";
 import { useCartDetails } from "@/context/useCartDetails";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 export default ({ objectProduct }) => {
     const { addCartProducts } = useContext(useCartDetails);
@@ -57,7 +57,7 @@ export default ({ objectProduct }) => {
                     >
                         -
                     </button>
-                    <span className="text-xl">0</span>
+                    <span className="text-xl">{count}</span>
                     <button
                         className="text-3xl text-orange-primary"
                         onClick={() => setCount(count + 1)}
