@@ -20,7 +20,7 @@ export default ({ objectProduct }) => {
                 (1 - objectProduct.discount)
             ).toFixed(2),
             title: objectProduct.title,
-            quantity: count,
+            quantity: count === 0 ? 1 : count,
         });
         setCount(0);
     };
