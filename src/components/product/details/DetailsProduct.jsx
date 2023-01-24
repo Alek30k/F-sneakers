@@ -4,6 +4,7 @@ import { useContext } from "react";
 
 export default ({ objectProduct }) => {
     const { addCartProducts } = useContext(useCartDetails);
+    const [count, setCount] = useState(0);
 
     const handleAddToCart = () => {
         addCartProducts({
@@ -16,7 +17,7 @@ export default ({ objectProduct }) => {
             title: objectProduct.title,
             quantity: 1,
         });
-        // setCount(0);
+        setCount(0);
     };
 
     return (
