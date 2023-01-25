@@ -36,7 +36,10 @@ export default () => {
                             </p>
                         </div>
                         <button className="ml-auto">
-                            <DeleteIcon className="hover:fill-orange-primary" />
+                            <DeleteIcon
+                                className="hover:fill-orange-primary"
+                                onClick={() => deleteCartProducts(product.id)}
+                            />
                         </button>
                     </article>
                 ))}
