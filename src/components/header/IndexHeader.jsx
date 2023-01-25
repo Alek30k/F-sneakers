@@ -6,7 +6,7 @@ import CartIcon from "@/components/icons/CartIcon";
 import CloseIcon from "@/components/icons/CloseIcon";
 import NavLinkHeader from "@/components/header/NavLinkHeader";
 import CartDetailsHeader from "@/components/header/CartDetailsHeader";
-import useCartDetails from "@/context/useCartDetails";
+import { useCartDetails } from "@/context/useCartDetails";
 
 const MainHeader = () => {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
