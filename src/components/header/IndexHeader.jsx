@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import LogoSneakes from "@/assets/images/logo.svg";
 import AvatarImage from "@/assets/images/image-avatar.png";
 import MenuIcon from "@/components/icons/MenuIcon";
@@ -6,10 +6,12 @@ import CartIcon from "@/components/icons/CartIcon";
 import CloseIcon from "@/components/icons/CloseIcon";
 import NavLinkHeader from "@/components/header/NavLinkHeader";
 import CartDetailsHeader from "@/components/header/CartDetailsHeader";
+import useCartDetails from "@/context/useCartDetails";
 
 const MainHeader = () => {
     const [isOpenMenu, setIsOpenMenu] = useState(false);
     const [isOpenDetailsCart, setOpenDetailsCart] = useState(false);
+    const { totalQuantityProduct } = useContext(useCartDetails);
 
     const handleOpenMenu = () => {
         setIsOpenMenu(true);
@@ -54,6 +56,9 @@ const MainHeader = () => {
                         className="relative"
                     >
                         <CartIcon />
+                        <span className="rigth-0 absolute top-0 translate-x-1 rounded-full bg-orange-primary px-2 text-xs font-bold text-white">
+                            {totalQuantityProduct}
+                        </span>
                     </button>
                     <img src={AvatarImage} alt="" className="w-10" />
                     {isOpenDetailsCart && <CartDetailsHeader />}

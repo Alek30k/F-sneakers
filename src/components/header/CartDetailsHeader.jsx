@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { useCartDetails } from "@/context/useCartDetails";
-// import ImgSmall from "@/assets/images/image-product-1-thumbnail.jpg";
 import DeleteIcon from "../icons/DeleteIcon";
 
 export default () => {

@@ -36,7 +36,7 @@ export default (props) => {
                 cartProducts,
                 addCartProducts,
                 deleteCartProducts,
-                // totalQuantityProduct,
+                totalQuantityProduct,
             }}
         >
             {props.children}
