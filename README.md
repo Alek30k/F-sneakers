@@ -6,5 +6,5 @@ Desafío frontend Mentor
 
 
 ![Selección_002](https://user-images.githubusercontent.com/101005998/219973114-3a8289a2-ea69-435d-b9e4-5518e11b997a.png)
-![Selección_002](sneakers2](https://user-images.githubusercontent.com/101005998/219973151-61ddd083-8086-4198-8f74-2e4b0ad2ef16.png)
+![Selección_002](https://user-images.githubusercontent.com/101005998/219973151-61ddd083-8086-4198-8f74-2e4b0ad2ef16.png)
 ![Selección_002](https://user-images.githubusercontent.com/101005998/219973187-63bcbf26-dbb2-496d-804b-ad68c27299ba.png)
