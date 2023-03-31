@@ -25,7 +25,7 @@ export default ({
         <section {...props}>
             {isOpenModal && (
                 <button
-                    className="text-right md:col-span-4"
+                    className=" text-right md:col-span-4"
                     onClick={handleCloseModal}
                 >
                     X

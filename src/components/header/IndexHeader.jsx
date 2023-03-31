@@ -32,9 +32,9 @@ const MainHeader = () => {
                     className="mr-auto mb-1 h-5 md:mr-0"
                 />
                 <nav
-                    className={`font-bold md:static md:mr-auto md:flex md:h-auto md:flex-row md:gap-4 md:p-0 ${
+                    className={` font-bold md:static md:mr-auto md:flex md:h-auto md:flex-row md:gap-4 md:p-0 ${
                         isOpenMenu
-                            ? "absolute top-0 left-0 z-10 flex h-full w-4/5 flex-col gap-y-[21px] bg-white p-8"
+                            ? "absolute top-0 left-0 z-10 flex h-screen w-1/2 flex-col gap-y-[21px] bg-white p-8 "
                             : "hidden"
                     }`}
                 >
